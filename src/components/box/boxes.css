@@ -1,0 +1,20 @@
+.box-1{
+    position: relative;
+    backdrop-filter: blur(60px);
+    border-radius: 20px;
+    background: linear-gradient(127.09deg, rgba(6, 11, 40, 0.94) 19.41%, rgba(10, 14, 35, 0.49) 76.65%) border-box;
+}
+
+.box-2 {
+    position: relative;
+    background: linear-gradient(127.09deg, rgba(34, 41, 78, 0.94) 19.41%, rgba(10, 14, 35, 0.49) 76.65%);
+    border-radius: 18px;
+}
+
+.box-3 {
+    position: relative;
+    background-image: url("../../assets/img/BackgroundCard1.png");
+    background-position: center;
+    background-size: cover;
+}
+

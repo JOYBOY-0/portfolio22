@@ -1,0 +1,9 @@
+.header-main{
+    display: none;
+}
+
+@media (min-height: 800px) {
+    .header-main{
+        display: flex;
+    }
+}

@@ -1,0 +1,79 @@
+html{
+    scroll-behavior: smooth;
+
+}
+.projects-v{
+    background-image: url("../../assets/img/background-home.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-clip: border-box;
+    animation: backAnimate 20s ease-in-out infinite;
+}
+
+@keyframes backAnimate {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+    
+
+
+.section-projects{
+    max-width: 600px;
+    padding: 20px;
+    margin: 0 auto;
+
+}
+
+.projects-wrap{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+
+}
+
+
+@media (min-width: 768px) {
+
+    .section-projects{
+        max-width: 900px;
+    }
+
+    .projects-wrap{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    
+    .section-projects{
+        max-width: 1300px;
+    }
+
+    .projects-wrap{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+
+    }
+
+    .projects-wrap :nth-child(2){
+        grid-column: span 2;
+    }
+
+    .projects-wrap :nth-child(0n + 7){
+        grid-column: span 2;
+    }
+}
