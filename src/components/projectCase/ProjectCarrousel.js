@@ -54,7 +54,7 @@ export default function ProjectCarrousel({data}) {
   }
 return (
 
-<Box className="flex flex-col items-center w-full min-h-[300px]" >
+<Box className="flex flex-col items-center w-full" >
 
     <Modal
       show={open}

@@ -22,7 +22,7 @@ export default function ProjectSection({refs, index, data, projectOnClick}) {
             <div
             style={{
                 backgroundImage: `url(${cardImage1})`,
-                backgroundSize: 'cover'
+                backgroundSize: '100% 200%'
             }}
             className='flex flex-col justify-center items-start rounded-[18px] overflow-hidden 
             py-10 px-[22px] mb-5 

@@ -55,13 +55,13 @@
             },
             {
                 "id": 5,
-                "title": "5",
-                "category": "juego de estretegia web",
-                "imgSrc": "./assets/img/projects/worldSeekers/ws_thumbnail.png",
+                "title": "Crypto Dashboard",
+                "category": "NFT game dashboard demo",
+                "imgSrc": "./assets/img/projects/cryptoDashboard/dashboard_thumbnail.png",
                 "technologies": [],
                 "links":{
-                    "code": false,
-                    "demo": "https://world-seekers.com/"
+                    "code": "https://github.com/JOYBOY-0/world-market",
+                    "demo": false
                 }
             }
         ]
@@ -76,10 +76,18 @@
         "projects": [
            {
                "id": 1,
-               "title": "World Seekers",
-               "category": "juego de estretegia web",
-               "imgSrc": "./assets/img/projects/worldSeekers/ws_thumbnail.png",
-               "technologies": []
+               "title": "World Seekers SET 1",
+               "category": "Diseño de personajes",
+               "imgSrc": "./assets/img/projects/ws_characters/ws_characters_thumbnail.jpg",
+               "technologies": [],
+               "resources": [
+                "./assets/img/projects/ws_characters/presentation_circus1.jpg",
+                "./assets/img/projects/ws_characters/presentation_circus3.jpg",
+                "./assets/img/projects/ws_characters/presentation_circus2.jpg",
+                "./assets/img/projects/ws_characters/presentation_chess1.jpg",
+                "./assets/img/projects/ws_characters/presentation_forest2.jpg",
+                "./assets/img/projects/ws_characters/presentation_forest1.jpg"
+            ]
            },
            {
                "id": 2,
@@ -90,10 +98,16 @@
            },
            {
                "id": 3,
-               "title": "3",
-               "category": "juego de estretegia web",
-               "imgSrc": "./assets/img/projects/worldSeekers/ws_thumbnail.png",
-               "technologies": []
+               "title": "Cartoon concepts",
+               "category": "Animación After Effects",
+               "imgSrc": "./assets/img/projects/cartoonAnim/merchant_idle.gif",
+               "technologies": [],
+               "resources": [
+                "./assets/img/projects/cartoonAnim/merchant_idle.gif",
+                "./assets/img/projects/cartoonAnim/merchant_run.gif",
+                "./assets/img/projects/cartoonAnim/scarecrow_idle.gif",
+                "./assets/img/projects/cartoonAnim/scarecrow_run.gif"
+            ]
            },
            {
                "id": 4,

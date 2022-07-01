@@ -7,7 +7,7 @@ import data from '../../data/data.json'
 
 import './projects.css'
 import IndexItem from './IndexItem';
-import useScrollPosition from '../../hooks/useScrollPosition';
+import useWindowDimensions from '../../hooks/useScrollPosition';
 
 export default function Projects() {
 
@@ -16,11 +16,10 @@ export default function Projects() {
     const dataSections = data.sections;
 
     useEffect(() => {
-        sections.current = sections.current.slice(0, dataSections.length);
-        
+        sections.current = sections.current.slice(0, dataSections.length);       
      }, [dataSections]);
 
-    const scroll = useScrollPosition()
+    const window = useWindowDimensions()
     
     const indexes = data.sections.map((section, index) => 
         <IndexItem
