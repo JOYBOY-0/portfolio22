@@ -17,6 +17,7 @@ export default function Projects() {
 
     useEffect(() => {
         sections.current = sections.current.slice(0, dataSections.length);
+        
      }, [dataSections]);
 
     const scroll = useScrollPosition()

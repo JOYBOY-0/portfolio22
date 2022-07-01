@@ -4,66 +4,73 @@
         "id": 1,
         "title": "Proyectos Web",
         "subtitle": "Algunos de mis ultimos proyectos utilizando tecnologías web",
-        "technologies": [],
+        "technologies": ["react-original", "nodejs-plain", "javascript-plain", "tailwindcss-plain"],
         "sectionId": "web-projects",
         "style": "",
         "projects": [
+
             {
                 "id": 1,
-                "title": "World Seekers",
-                "category": "juego de estretegia web",
-                "imgSrc": "./assets/img/projects/worldSeekers/ws_thumbnail.png",
-                "technologies": []
+                "title": "Manage",
+                "category": "Demo lading page",
+                "imgSrc": "./assets/img/projects/manage/manage_thumbmnail.png",
+                "technologies": [],
+                "links":{
+                    "code": "https://github.com/JOYBOY-0/manage_landing",
+                    "demo": "https://manage-landing-five.vercel.app/"
+                }
             },
             {
                 "id": 2,
-                "title": "2",
+                "title": "World Seekers",
                 "category": "juego de estretegia web",
                 "imgSrc": "./assets/img/projects/worldSeekers/ws_thumbnail.png",
-                "technologies": []
+                "technologies": [],
+                "links":{
+                    "code": false,
+                    "demo": "https://world-seekers.com/"
+                }
             },
             {
                 "id": 3,
-                "title": "3",
-                "category": "juego de estretegia web",
-                "imgSrc": "./assets/img/projects/worldSeekers/ws_thumbnail.png",
-                "technologies": []
+                "title": "Portfolio[2022]",
+                "category": "Portfolio moderno en React",
+                "imgSrc": "./assets/img/projects/portfolio/portfolio_thumbmnail.png",
+                "technologies": [],
+                "links":{
+                    "code": "https://github.com/JOYBOY-0/portfolio22",
+                    "demo": "https://www.joyboy.ar/"
+                }
             },
             {
                 "id": 4,
-                "title": "4",
-                "category": "juego de estretegia web",
-                "imgSrc": "./assets/img/projects/worldSeekers/ws_thumbnail.png",
-                "technologies": []
+                "title": "WS game API",
+                "category": "Server side game master",
+                "imgSrc": "./assets/img/projects/worldSeekers/ws_api_thumbmnail.png",
+                "technologies": [],
+                "links":{
+                    "code": "https://github.com/JOYBOY-0/WS-game-master",
+                    "demo": false
+                }
             },
             {
                 "id": 5,
                 "title": "5",
                 "category": "juego de estretegia web",
                 "imgSrc": "./assets/img/projects/worldSeekers/ws_thumbnail.png",
-                "technologies": []
-            },
-            {
-                "id": 6,
-                "title": "6",
-                "category": "juego de estretegia web",
-                "imgSrc": "./assets/img/projects/worldSeekers/ws_thumbnail.png",
-                "technologies": []
-            },
-            {
-                "id": 7,
-                "title": "7",
-                "category": "juego de estretegia web",
-                "imgSrc": "./assets/img/projects/worldSeekers/ws_thumbnail.png",
-                "technologies": []
+                "technologies": [],
+                "links":{
+                    "code": false,
+                    "demo": "https://world-seekers.com/"
+                }
             }
         ]
     },
     {  
         "id": 2,
         "title": "Diseño - Ilustración",
-        "subtitle": "Mi parte más creativa; mis mundos favoritos!",
-        "technologies": [],
+        "subtitle": "¡Mi parte más creativa! Desde personajes hasta experiencias",
+        "technologies": ["aftereffects-plain", "photoshop-plain", "illustrator-plain", "figma-plain"],
         "sectionId": "design-projects",
         "style": "",
         "projects": [
@@ -98,20 +105,6 @@
            {
                "id": 5,
                "title": "5",
-               "category": "juego de estretegia web",
-               "imgSrc": "./assets/img/projects/worldSeekers/ws_thumbnail.png",
-               "technologies": []
-           },
-           {
-               "id": 6,
-               "title": "6",
-               "category": "juego de estretegia web",
-               "imgSrc": "./assets/img/projects/worldSeekers/ws_thumbnail.png",
-               "technologies": []
-           },
-           {
-               "id": 7,
-               "title": "7",
                "category": "juego de estretegia web",
                "imgSrc": "./assets/img/projects/worldSeekers/ws_thumbnail.png",
                "technologies": []

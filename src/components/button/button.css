@@ -22,3 +22,12 @@
 .button-2:hover{
     background-color: #ffffff15;
 }
+
+.button-disabled{
+    color: black;
+    background-color: #ffffff68;
+    border: 2px solid #999999;
+    outline: transparent solid 2px;
+    outline-offset: 2px;
+    cursor: not-allowed;
+}

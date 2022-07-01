@@ -39,10 +39,7 @@ export default function ProjectSection({refs, index, data, projectOnClick}) {
 
                 <div className='flex items-center justify-center 
                 space-x-4 mt-6 lg:mt-0 lg:mr-6 text-4xl text-white'>
-                    <i className="devicon-react-original"></i>
-                    <i className="devicon-nodejs-plain"></i>
-                    <i className="devicon-javascript-plain"></i>
-                    <i className="devicon-tailwindcss-plain"></i>
+                    {data.technologies.map((tech, idx) => <i className={`devicon-${tech}`} key={idx} /> )}
                 </div>
             </div>
 
