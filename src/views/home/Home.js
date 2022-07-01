@@ -16,15 +16,18 @@ export default function Home() {
 
         <Header />
 
-        <section className='flex flex-col items-center w-[90%] max-w-[400px]'>
+        <div className='flex items-center justify-center carrousel' >
+
+        <section className='flex flex-col items-center w-[90%] max-w-[400px] '>
 
           <h2 className='text-white font-bold text-lg mb-3'>
                   Mis proyectos destacados
           </h2>
           
-          <ProjectCarrousel data={data} />
+          <ProjectCarrousel data={data.sections[0].projects} />
       
         </section>
+        </div>
 
 
         <CvButton />

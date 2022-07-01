@@ -1,51 +1,121 @@
-[
+{
+"sections":[
     {
         "id": 1,
-        "title": "World Seekers",
-        "category": "juego de estretegia web",
-        "imgSrc": "./assets/img/projects/worldSeekers/ws_thumbnail.png",
-        "technologies": []
+        "title": "Proyectos Web",
+        "subtitle": "Algunos de mis ultimos proyectos utilizando tecnologías web",
+        "technologies": [],
+        "sectionId": "web-projects",
+        "style": "",
+        "projects": [
+            {
+                "id": 1,
+                "title": "World Seekers",
+                "category": "juego de estretegia web",
+                "imgSrc": "./assets/img/projects/worldSeekers/ws_thumbnail.png",
+                "technologies": []
+            },
+            {
+                "id": 2,
+                "title": "2",
+                "category": "juego de estretegia web",
+                "imgSrc": "./assets/img/projects/worldSeekers/ws_thumbnail.png",
+                "technologies": []
+            },
+            {
+                "id": 3,
+                "title": "3",
+                "category": "juego de estretegia web",
+                "imgSrc": "./assets/img/projects/worldSeekers/ws_thumbnail.png",
+                "technologies": []
+            },
+            {
+                "id": 4,
+                "title": "4",
+                "category": "juego de estretegia web",
+                "imgSrc": "./assets/img/projects/worldSeekers/ws_thumbnail.png",
+                "technologies": []
+            },
+            {
+                "id": 5,
+                "title": "5",
+                "category": "juego de estretegia web",
+                "imgSrc": "./assets/img/projects/worldSeekers/ws_thumbnail.png",
+                "technologies": []
+            },
+            {
+                "id": 6,
+                "title": "6",
+                "category": "juego de estretegia web",
+                "imgSrc": "./assets/img/projects/worldSeekers/ws_thumbnail.png",
+                "technologies": []
+            },
+            {
+                "id": 7,
+                "title": "7",
+                "category": "juego de estretegia web",
+                "imgSrc": "./assets/img/projects/worldSeekers/ws_thumbnail.png",
+                "technologies": []
+            }
+        ]
     },
-    {
+    {  
         "id": 2,
-        "title": "2",
-        "category": "juego de estretegia web",
-        "imgSrc": "./assets/img/projects/worldSeekers/ws_thumbnail.png",
-        "technologies": []
-    },
-    {
-        "id": 3,
-        "title": "3",
-        "category": "juego de estretegia web",
-        "imgSrc": "./assets/img/projects/worldSeekers/ws_thumbnail.png",
-        "technologies": []
-    },
-    {
-        "id": 4,
-        "title": "4",
-        "category": "juego de estretegia web",
-        "imgSrc": "./assets/img/projects/worldSeekers/ws_thumbnail.png",
-        "technologies": []
-    },
-    {
-        "id": 5,
-        "title": "5",
-        "category": "juego de estretegia web",
-        "imgSrc": "./assets/img/projects/worldSeekers/ws_thumbnail.png",
-        "technologies": []
-    },
-    {
-        "id": 6,
-        "title": "6",
-        "category": "juego de estretegia web",
-        "imgSrc": "./assets/img/projects/worldSeekers/ws_thumbnail.png",
-        "technologies": []
-    },
-    {
-        "id": 7,
-        "title": "7",
-        "category": "juego de estretegia web",
-        "imgSrc": "./assets/img/projects/worldSeekers/ws_thumbnail.png",
-        "technologies": []
-    }
+        "title": "Diseño - Ilustración",
+        "subtitle": "Mi parte más creativa; mis mundos favoritos!",
+        "technologies": [],
+        "sectionId": "design-projects",
+        "style": "",
+        "projects": [
+           {
+               "id": 1,
+               "title": "World Seekers",
+               "category": "juego de estretegia web",
+               "imgSrc": "./assets/img/projects/worldSeekers/ws_thumbnail.png",
+               "technologies": []
+           },
+           {
+               "id": 2,
+               "title": "2",
+               "category": "juego de estretegia web",
+               "imgSrc": "./assets/img/projects/worldSeekers/ws_thumbnail.png",
+               "technologies": []
+           },
+           {
+               "id": 3,
+               "title": "3",
+               "category": "juego de estretegia web",
+               "imgSrc": "./assets/img/projects/worldSeekers/ws_thumbnail.png",
+               "technologies": []
+           },
+           {
+               "id": 4,
+               "title": "4",
+               "category": "juego de estretegia web",
+               "imgSrc": "./assets/img/projects/worldSeekers/ws_thumbnail.png",
+               "technologies": []
+           },
+           {
+               "id": 5,
+               "title": "5",
+               "category": "juego de estretegia web",
+               "imgSrc": "./assets/img/projects/worldSeekers/ws_thumbnail.png",
+               "technologies": []
+           },
+           {
+               "id": 6,
+               "title": "6",
+               "category": "juego de estretegia web",
+               "imgSrc": "./assets/img/projects/worldSeekers/ws_thumbnail.png",
+               "technologies": []
+           },
+           {
+               "id": 7,
+               "title": "7",
+               "category": "juego de estretegia web",
+               "imgSrc": "./assets/img/projects/worldSeekers/ws_thumbnail.png",
+               "technologies": []
+           }
+       ]}
 ]
+}

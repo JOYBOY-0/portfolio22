@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 
 export default function useIntersectionObserver(
-    ref,  
+    elm,  
     root = null, 
     rootMargin = '0px' , 
     threshold = 0.20 
@@ -22,7 +22,7 @@ export default function useIntersectionObserver(
           }
     
         const observer = new IntersectionObserver(onChange, options)
-        if (ref.current) observer.observe(ref.current)
+        if (elm) observer.observe(elm)
         return () => { observer.disconnect() }
       })
 

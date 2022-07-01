@@ -7,11 +7,16 @@ import './header.css'
 
 export default function Header() {
   return (
-    <Box className="flex items-center  
-    max-w-lg rounded-b-2xl rounded-t-none header-main " >
-    <OutlineWrap roundness='rounded-full'  >
-        <img className='w-16 rounded-full' src={avatar} alt="avatarImage" />
-    </OutlineWrap>
+
+    <Box
+      className="items-center  
+      max-w-lg rounded-b-2xl rounded-t-none header-main"
+    >
+
+      <OutlineWrap roundness='rounded-full'  >
+          <img className='w-16 rounded-full' src={avatar} alt="avatarImage" />
+      </OutlineWrap>
+
     <div className='flex flex-col items-start justify-start ml-3'>
         <h3 className='text-white font-bold text-base'>
             React Developer
