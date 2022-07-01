@@ -91,10 +91,11 @@
            },
            {
                "id": 2,
-               "title": "2",
-               "category": "juego de estretegia web",
+               "title": "World Seekers vector Assets",
+               "category": "componentes SVG",
                "imgSrc": "./assets/img/projects/worldSeekers/ws_thumbnail.png",
-               "technologies": []
+               "technologies": [],
+               "resources": []
            },
            {
                "id": 3,
@@ -108,20 +109,6 @@
                 "./assets/img/projects/cartoonAnim/scarecrow_idle.gif",
                 "./assets/img/projects/cartoonAnim/scarecrow_run.gif"
             ]
-           },
-           {
-               "id": 4,
-               "title": "4",
-               "category": "juego de estretegia web",
-               "imgSrc": "./assets/img/projects/worldSeekers/ws_thumbnail.png",
-               "technologies": []
-           },
-           {
-               "id": 5,
-               "title": "5",
-               "category": "juego de estretegia web",
-               "imgSrc": "./assets/img/projects/worldSeekers/ws_thumbnail.png",
-               "technologies": []
            }
        ]}
 ]
