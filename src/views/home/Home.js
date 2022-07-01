@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import "./home.css"
 
@@ -8,19 +8,6 @@ import CvButton from '../../components/cvButton/CvButton'
 import data from '../../data/data.json'
 
 export default function Home() {
-
-  console.log(data)
-  const [open, setOpen] = useState(false);
-  const [project, setProject] = useState(null);
-
-  const openModal = (project) => {
-      setProject(project);
-      setOpen(true);
-  }
-
-  const closeModal = () => {
-      setOpen(false)
-  }
 
   return (
     <div className='home-v overflow-hidden

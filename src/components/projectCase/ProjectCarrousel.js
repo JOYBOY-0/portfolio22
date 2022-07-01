@@ -3,6 +3,8 @@ import Box from '../box/Box'
 import Button from '../button/Button'
 import ProjectCase from './ProjectCase'
 import { motion, AnimatePresence } from "framer-motion"
+import Modal from '../modal/Modal'
+import ModalProject from '../modal/ModalProject'
 
 
 const delay = 3700;
@@ -39,10 +41,31 @@ export default function ProjectCarrousel({data}) {
     };
   });
   
-  console.log(prev(), index, next())
+  const [open, setOpen] = useState(false);
+  const [project, setProject] = useState(null);
+
+  const openModal = (project) => {
+      setProject(project);
+      setOpen(true);
+  }
+
+  const closeModal = () => {
+      setOpen(false)
+  }
 return (
 
 <Box className="flex flex-col items-center w-full" >
+
+    <Modal
+      show={open}
+      onClose={() => closeModal()}
+    >
+        <ModalProject
+          close={() => closeModal()}
+          data={project} 
+        />
+
+    </Modal>
 
     <div className='flex relative'>
 
@@ -56,7 +79,8 @@ return (
             >
 
             <ProjectCase
-            data={data[prev()]} />
+              detailsOnClick={() => openModal(data[prev()])}
+              data={data[prev()]} />
 
         </motion.div>
 
@@ -69,7 +93,9 @@ return (
           > 
 
             <ProjectCase
-            data={data[index]} className="mb-6" />
+              detailsOnClick={() => openModal(data[index])}
+              data={data[index]} className="mb-6" 
+            />
 
         </motion.div> 
 
@@ -82,7 +108,9 @@ return (
           >
 
             <ProjectCase
-            data={data[next()]}  />
+              detailsOnClick={() => openModal(data[next()])}
+              data={data[next()]} 
+            />
 
         </motion.div>
       </AnimatePresence>
