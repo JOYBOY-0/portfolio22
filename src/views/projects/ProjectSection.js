@@ -5,13 +5,12 @@ import cardImage1 from '../../assets/img/bgProfile.png';
 export default function ProjectSection({refs, index, data, projectOnClick}) {
 
   const projectCases = data.projects.map((project, index) => 
-
     <ProjectCase
-    detailsOnClick={() => projectOnClick(project)}
-    links key={index} 
-    data={project}
-    className="md:mb-0" 
-  />
+      detailsOnClick={() => projectOnClick(project)}
+      links key={index} 
+      data={project}
+      className="md:mb-0" 
+    />
   );
 
   return (

@@ -1,12 +1,13 @@
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 
 export default function useIntersectionObserver(
-    elm,  
     root = null, 
     rootMargin = '0px' , 
-    threshold = 0.20 
+    threshold = .2 
 ) {
     const [ isVisible, setIsVisible ] = useState(false)
+
+    const ref = useRef(null);
 
     const options = {
       root: root,
@@ -22,9 +23,9 @@ export default function useIntersectionObserver(
           }
     
         const observer = new IntersectionObserver(onChange, options)
-        if (elm) observer.observe(elm)
+        if (ref) observer.observe(ref.current)
         return () => { observer.disconnect() }
-      })
+      }, [ref.current])
 
-    return isVisible
+    return {ref, isVisible}
 }

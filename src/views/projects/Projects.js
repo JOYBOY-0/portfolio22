@@ -4,31 +4,37 @@ import Modal from '../../components/modal/Modal'
 import ModalProject from '../../components/modal/ModalProject';
 import ProjectSection from './ProjectSection'
 import data from '../../data/data.json'
-
-import './projects.css'
 import IndexItem from './IndexItem';
-import useWindowDimensions from '../../hooks/useScrollPosition';
+import useIntersectionObserver from '../../hooks/useIntersectionObserver';
+import './projects.css'
 
 export default function Projects() {
 
-    const sections = useRef([])
+    const {ref: webSection, isVisible: webSectionIndex } = useIntersectionObserver();
+    const {ref: designSection, isVisible: designSectionIndex } = useIntersectionObserver();
+    const {ref: modelingSection, isVisible: modelingSectionIndex } = useIntersectionObserver();
 
-    const dataSections = data.sections;
+    const indexes = [webSectionIndex, designSectionIndex, modelingSectionIndex];
+
+  console.log(indexes);
+
+    const [activeIndex, setActiveIndex] = useState(0);
 
     useEffect(() => {
-        sections.current = sections.current.slice(0, dataSections.length);       
-     }, [dataSections]);
+      if (modelingSectionIndex) {
+        setActiveIndex(2);
+      }
 
-    const window = useWindowDimensions()
-    
-    const indexes = data.sections.map((section, index) => 
-        <IndexItem
-        data={section} 
-        elm={sections.current[index]} 
-        key={index} 
-        index={index}
-        last={data.sections.length - 1 === index} 
-    />)
+      if (designSectionIndex) {
+        setActiveIndex(1);
+      }
+
+      if (webSectionIndex) {
+        setActiveIndex(0);
+      }
+
+
+     }, [designSectionIndex, modelingSectionIndex, webSectionIndex]);
 
     const [open, setOpen] = useState(false);
     const [project, setProject] = useState(null);
@@ -62,22 +68,43 @@ export default function Projects() {
         xl:flex' >
 
             <div className='space-y-4 min-w-[250px]'>
-                { indexes }
+                <IndexItem
+                  data={ data.sections[0] } 
+                  isActive={0 === activeIndex}
+                  last={false} 
+                />
+                <IndexItem
+                  data={ data.sections[1] } 
+                  isActive={1 === activeIndex}
+                  last={false} 
+                />
+                <IndexItem
+                  data={ data.sections[1] } 
+                  isActive={2 === activeIndex}
+                  last={true} 
+                />
+
             </div>
 
             <CvButton />
         </aside>
 
         <main className='section-projects w-full'>
-            {data.sections.map((section, idx) =>  
                 <ProjectSection
-                  refs={el => sections.current[idx] = el}
-                  data={section}
+                  refs={webSection}
+                  data={data.sections[0]}
                   projectOnClick={openModal}
-                  key={idx}
-                  index={idx}
                 />
-            )}
+                <ProjectSection
+                  refs={designSection}
+                  data={data.sections[1]}
+                  projectOnClick={openModal}
+                />
+                <ProjectSection
+                  refs={modelingSection}
+                  data={data.sections[1]}
+                  projectOnClick={openModal}
+                />
         </main>
 
     </div>

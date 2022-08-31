@@ -1,16 +1,13 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import IconBox from '../../components/box/IconBox';
-import useIntersectionObserver from '../../hooks/useIntersectionObserver';
 
-export default function IndexItem({elm, data, index, last, ...props}) {  
+export default function IndexItem({ data, isActive, last, ...props}) {  
     
-    let observer = elm;
-    
-    const isActive = useIntersectionObserver(observer);
-
-    const asideTitle = (visible) => visible ? 
+    const asideTitle = () => isActive ? 
     'text-white text-xl font-bold transition-all' : 
     'text-gray-300 text-lg font-semibold  transition-all'
+
+    console.log(isActive);
 
   return (
     <>
