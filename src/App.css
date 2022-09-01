@@ -1,5 +1,6 @@
 
 html, body, .root {
+  height: 100%;
   min-height: 100%;
 }
 
@@ -10,6 +11,11 @@ html{
   -o-background-size: cover;
   background-size: cover;
   scroll-behavior: smooth;
+
+}
+
+.layout{
+  overflow-y: scroll;
 
 }
 
