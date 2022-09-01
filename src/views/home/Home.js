@@ -3,14 +3,13 @@ import Header from '../../components/partials/header/Header'
 import CvButton from '../../components/cvButton/CvButton'
 import AtroposCard from '../../components/AtroposCard/AtroposCard'
 import "./home.css"
+import Layout from '../../components/layout/Layout'
 
 
 export default function Home() {
 
   return (
-    <div className='home-v w-full overflow-hidden
-    flex flex-col items-center justify-between
-    h-screen px-3 pb-3'>
+    <Layout className="pb-4 flex flex-col items-center justify-between">
 
         <Header />
 
@@ -26,6 +25,6 @@ export default function Home() {
 
         <CvButton />
 
-    </div>
+    </Layout>
   )
 }

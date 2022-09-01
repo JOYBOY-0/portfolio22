@@ -7,6 +7,7 @@ import data from '../../data/data.json'
 import IndexItem from './IndexItem';
 import useIntersectionObserver from '../../hooks/useIntersectionObserver';
 import './projects.css'
+import Layout from '../../components/layout/Layout';
 
 export default function Projects() {
 
@@ -45,9 +46,8 @@ export default function Projects() {
     }
 
   return (
-    <div className='projects-v
-    flex flex-col items-start justify-between
-    min-h-screen px-4 xl:flex-row'>
+
+      <Layout className=" flex flex-col items-start justify-between xl:flex-row" >
 
         <Modal
           show={open}
@@ -60,8 +60,8 @@ export default function Projects() {
         </Modal>
 
         <aside className='hidden flex-col justify-between
-        h-screen sticky top-0 space-y-6 p-10 min-w-fit
-        xl:flex' >
+        h-screen  top-0 space-y-6 p-10 min-w-fit
+        xl:flex sticky' >
 
             <div className='space-y-4 min-w-[250px]'>
                 <IndexItem
@@ -103,6 +103,6 @@ export default function Projects() {
                 /> */}
         </main>
 
-    </div>
+    </Layout>
   )
 }
