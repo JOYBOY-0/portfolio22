@@ -2,12 +2,20 @@ html{
     scroll-behavior: smooth;
 
 }
-.projects-v{
+/* .projects-v{
     background-image: url("../../assets/img/background-home.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-clip: border-box;
     animation: backAnimate 20s ease-in-out infinite;
+} */
+
+.projects-v{
+    background:  url("../../assets/img/background-home.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 @keyframes backAnimate {

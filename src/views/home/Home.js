@@ -8,9 +8,9 @@ import "./home.css"
 export default function Home() {
 
   return (
-    <div className='home-v w-screen overflow-hidden
+    <div className='home-v w-full overflow-hidden
     flex flex-col items-center justify-between
-    min-h-screen px-3 pb-3'>
+    h-screen px-3 pb-3'>
 
         <Header />
 

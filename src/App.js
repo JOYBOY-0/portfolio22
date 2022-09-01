@@ -1,9 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "atropos/atropos.css";
-
 import Home from "./views/home/Home";
 import Projects from "./views/projects/Projects";
 import Modal from "./components/modal/Modal";
+import './App.css';
 
 function App() {
   return (
