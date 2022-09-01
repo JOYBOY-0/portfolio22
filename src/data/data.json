@@ -44,13 +44,13 @@
             },
             {
                 "id": 4,
-                "title": "WS game API",
-                "category": "Server side game master",
-                "imgSrc": "./assets/img/projects/worldSeekers/ws_api_thumbmnail.png",
+                "title": "<DEVParty />",
+                "category": "Utility web app",
+                "imgSrc": "/assets/img/projects/dev-party/dev-party_thumbmnail.png",
                 "technologies": [],
                 "links":{
-                    "code": "https://github.com/JOYBOY-0/WS-game-master",
-                    "demo": false
+                    "code": "https://github.com/JOYBOY-0/dev-party",
+                    "demo": "https://dev-party-otspeodd6-franchax.vercel.app/auth/login"
                 }
             },
             {
@@ -74,31 +74,9 @@
         "sectionId": "design-projects",
         "style": "",
         "projects": [
+         
            {
                "id": 1,
-               "title": "World Seekers SET 1",
-               "category": "Diseño de personajes",
-               "imgSrc": "./assets/img/projects/ws_characters/ws_characters_thumbnail.jpg",
-               "technologies": [],
-               "resources": [
-                "./assets/img/projects/ws_characters/presentation_circus1.jpg",
-                "./assets/img/projects/ws_characters/presentation_circus3.jpg",
-                "./assets/img/projects/ws_characters/presentation_circus2.jpg",
-                "./assets/img/projects/ws_characters/presentation_chess1.jpg",
-                "./assets/img/projects/ws_characters/presentation_forest2.jpg",
-                "./assets/img/projects/ws_characters/presentation_forest1.jpg"
-            ]
-           },
-           {
-               "id": 2,
-               "title": "World Seekers vector Assets",
-               "category": "componentes SVG",
-               "imgSrc": "./assets/img/projects/worldSeekers/ws_thumbnail.png",
-               "technologies": [],
-               "resources": []
-           },
-           {
-               "id": 3,
                "title": "Cartoon concepts",
                "category": "Animación After Effects",
                "imgSrc": "./assets/img/projects/cartoonAnim/merchant_idle.gif",
@@ -109,7 +87,23 @@
                 "./assets/img/projects/cartoonAnim/scarecrow_idle.gif",
                 "./assets/img/projects/cartoonAnim/scarecrow_run.gif"
             ]
-           }
+           },
+           {
+            "id": 2,
+            "title": "World Seekers SET 1",
+            "category": "Diseño de personajes",
+            "imgSrc": "./assets/img/projects/ws_characters/ws_characters_thumbnail.jpg",
+            "technologies": [],
+            "resources": [
+             "./assets/img/projects/ws_characters/presentation_circus1.jpg",
+             "./assets/img/projects/ws_characters/presentation_circus3.jpg",
+             "./assets/img/projects/ws_characters/presentation_circus2.jpg",
+             "./assets/img/projects/ws_characters/presentation_chess1.jpg",
+             "./assets/img/projects/ws_characters/presentation_forest2.jpg",
+             "./assets/img/projects/ws_characters/presentation_forest1.jpg"
+         ]
+        }
+           
        ]}
 ]
 }

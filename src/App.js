@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "atropos/atropos.css";
 
 import Home from "./views/home/Home";
 import Projects from "./views/projects/Projects";

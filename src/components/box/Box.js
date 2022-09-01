@@ -6,7 +6,7 @@ export default function Box({
   boxType = 1,
   ...props}) {
   return (
-    <article className={`box-${boxType} ${p} ${className}`}>
+    <article className={`box-${boxType} ${p} ${className}`} {...props} >
         {props.children}
     </article>
   )

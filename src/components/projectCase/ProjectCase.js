@@ -41,21 +41,21 @@ export default function ProjectCase({
           {data.links && 
           <div className='flex space-x-4 items-center mt-6 mb-2'>
 
-              <ButtonA 
-                type={!data.links.demo ? 'disabled' : '2'} 
-                to={!data.links.demo ? '#' : data.links.demo} 
-                rel={!data.links.demo ? '#' : 'noopener noreferrer'}
-                target={!data.links.demo ? '#' : "_blank"} 
+              {data.links.demo ?
+                <ButtonA 
+                type={'2'} 
+                to={data.links.demo}
                 > 
-                Demo</ButtonA>
+                Demo
+                </ButtonA> : <Button type={'disabled'}> Demo </Button>}
 
-              <ButtonA 
-                type={!data.links.code ? 'disabled' : '1'} 
-                to={!data.links.code ? '#' : data.links.code}  
-                rel={!data.links.code ? '#' : 'noopener noreferrer'}
-                target={!data.links.code ? '#' : "_blank"} 
-              > 
-                GitHub</ButtonA>
+                {data.links.code ?
+                <ButtonA 
+                type={'1'} 
+                to={data.links.code}
+                > 
+                GitHub
+                </ButtonA> : <Button type={'disabled'}> GitHub </Button>}
                 
           </div>
           }

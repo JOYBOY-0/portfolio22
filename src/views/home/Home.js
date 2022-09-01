@@ -1,30 +1,24 @@
 import React from 'react'
-
+import Header from '../../components/partials/header/Header'
+import CvButton from '../../components/cvButton/CvButton'
+import AtroposCard from '../../components/AtroposCard/AtroposCard'
 import "./home.css"
 
-import Header from '../../components/partials/header/Header'
-import ProjectCarrousel from '../../components/projectCase/ProjectCarrousel'
-import CvButton from '../../components/cvButton/CvButton'
-import data from '../../data/data.json'
 
 export default function Home() {
 
   return (
-    <div className='home-v overflow-hidden
+    <div className='home-v w-screen overflow-hidden
     flex flex-col items-center justify-between
     min-h-screen px-3 pb-3'>
 
         <Header />
 
-        <div className='flex items-center justify-center carrousel' >
+        <div className='flex items-center justify-center my-auto w-full' >
 
-        <section className='flex flex-col items-center w-[90%] max-w-[400px] '>
+        <section className='flex w-full max-h-[50vh]'>
 
-          <h2 className='text-white font-bold text-lg mb-3'>
-                  Mis proyectos destacados
-          </h2>
-          
-          <ProjectCarrousel data={data.sections[0].projects} />
+          <AtroposCard />
       
         </section>
         </div>

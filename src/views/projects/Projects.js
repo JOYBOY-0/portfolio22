@@ -12,18 +12,14 @@ export default function Projects() {
 
     const {ref: webSection, isVisible: webSectionIndex } = useIntersectionObserver();
     const {ref: designSection, isVisible: designSectionIndex } = useIntersectionObserver();
-    const {ref: modelingSection, isVisible: modelingSectionIndex } = useIntersectionObserver();
-
-    const indexes = [webSectionIndex, designSectionIndex, modelingSectionIndex];
-
-  console.log(indexes);
+    // const {ref: modelingSection, isVisible: modelingSectionIndex } = useIntersectionObserver();
 
     const [activeIndex, setActiveIndex] = useState(0);
 
     useEffect(() => {
-      if (modelingSectionIndex) {
-        setActiveIndex(2);
-      }
+      // if (modelingSectionIndex) {
+      //   setActiveIndex(2);
+      // }
 
       if (designSectionIndex) {
         setActiveIndex(1);
@@ -34,7 +30,7 @@ export default function Projects() {
       }
 
 
-     }, [designSectionIndex, modelingSectionIndex, webSectionIndex]);
+     }, [designSectionIndex, webSectionIndex]);
 
     const [open, setOpen] = useState(false);
     const [project, setProject] = useState(null);
@@ -76,13 +72,13 @@ export default function Projects() {
                 <IndexItem
                   data={ data.sections[1] } 
                   isActive={1 === activeIndex}
-                  last={false} 
+                  last={true} 
                 />
-                <IndexItem
+                {/* <IndexItem
                   data={ data.sections[1] } 
                   isActive={2 === activeIndex}
                   last={true} 
-                />
+                /> */}
 
             </div>
 
@@ -100,11 +96,11 @@ export default function Projects() {
                   data={data.sections[1]}
                   projectOnClick={openModal}
                 />
-                <ProjectSection
+                {/* <ProjectSection
                   refs={modelingSection}
                   data={data.sections[1]}
                   projectOnClick={openModal}
-                />
+                /> */}
         </main>
 
     </div>

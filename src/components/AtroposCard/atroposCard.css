@@ -1,0 +1,22 @@
+.preserve3d{
+  left: calc(50% - 82px);
+  z-index: 1;
+  transform-style: preserve-3d;
+}
+
+.atropos-shadow {
+  background-color: theme('colors.devBlue.700');
+  
+  filter: blur(50px) contrast(1.5);
+  opacity: 0.8;
+}
+
+.atropos-highlight {
+  background-color: rgba(0, 183, 255, 0.05);
+  z-index: 100;
+  opacity: 0.1;
+}
+
+.atropos-inner{
+  @apply rounded-2xl;
+}

@@ -1,12 +1,9 @@
-.header-main{
-    display: none;
-}
+/* .header-main{
+    display: flex;
+} */
 
-.carrousel{
-    margin: auto 0;
-}
 
-@media (min-height: 900px) {
+/* @media (min-height: 900px) {
     .header-main{
         display: flex;
     }
@@ -14,4 +11,4 @@
     .carrousel{
         margin: 0px 0px;
     }
-}
+} */

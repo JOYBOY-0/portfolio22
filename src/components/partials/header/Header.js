@@ -9,8 +9,8 @@ export default function Header() {
   return (
 
     <Box
-      className="items-center  
-      max-w-lg rounded-b-2xl rounded-t-none header-main"
+      className="flex items-center  
+      max-w-lg rounded-b-2xl rounded-t-none"
     >
 
       <OutlineWrap roundness='rounded-full'  >

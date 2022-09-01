@@ -7,8 +7,6 @@ export default function IndexItem({ data, isActive, last, ...props}) {
     'text-white text-xl font-bold transition-all' : 
     'text-gray-300 text-lg font-semibold  transition-all'
 
-    console.log(isActive);
-
   return (
     <>
     <a href={`#${data.sectionId}`}
